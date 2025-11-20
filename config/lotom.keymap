@@ -22,7 +22,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
 
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
     };
 
@@ -77,10 +77,10 @@
         ARROW {
             bindings = <
 &trans     &trans
-&kp GRAVE  &kp LC(LS(TAB))         &kp LG(RIGHT)  &kp NUMBER_9             &kp NUMBER_0       &trans  &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)  &kp LG(P)
-&kp TAB    &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)   &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans  &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LG(K)
-&kp LCMD   &kp LG(LS(LEFT_ARROW))  &trans         &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans              &kp LC(UP_ARROW)  &trans               &kp LG(L)
-&trans     &trans                  &trans         &trans                   &trans             &trans  &trans  &trans  &trans              &trans
+&kp GRAVE  &kp LC(LS(TAB))         &kp LC(UP_ARROW)    &kp NUMBER_9             &kp NUMBER_0       &trans  &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW    &kp RC(RIGHT_ARROW)  &kp LA(S)
+&kp TAB    &kp LC(LEFT_ARROW)      &kp LC(DOWN_ARROW)  &kp LC(RIGHT_ARROW)      &kp LEFT_BRACKET   &trans  &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LA(C)
+&kp LCMD   &kp LG(LS(LEFT_ARROW))  &trans              &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans  &trans  &trans  &kp LC(U)           &kp LC(C)       &trans               &kp LG(L)
+&trans     &trans                  &trans              &trans                   &kp LEFT_GUI       &trans  &trans  &trans  &trans              &trans
             >;
 
             sensor-bindings = <
@@ -95,7 +95,7 @@
 &kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &trans  &trans  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
 &kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans  &trans  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
 &mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans  &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans                   &trans        &trans        &trans                &trans        &trans  &trans  &kp LEFT_SHIFT   &trans        &trans
+&trans                   &trans        &trans        &trans                &kp LEFT_GUI  &trans  &trans  &kp LEFT_SHIFT   &trans        &trans
             >;
 
             sensor-bindings = <
@@ -121,11 +121,11 @@
 
         BT {
             bindings = <
-&trans         &trans
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
-&trans         &trans     &trans     &trans     &trans  &trans  &trans  &trans      &trans      &trans
+&trans     &trans
+&kp LG(Q)  &kp LC(W)      &trans     &kp LC(LS(LG(NUMBER_4)))  &trans  &trans  &trans       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(Z)  &kp LS(LG(Z))  &kp LG(C)  &kp LG(V)                 &trans  &trans  &trans       &trans      &trans      &trans        &trans        &kp LS(SLASH)
+&kp LG(Z)  &kp LG(X)      &kp LG(C)  &kp LG(V)                 &trans  &trans  &trans       &trans      &trans      &trans        &trans        &trans
+&trans     &trans         &trans     &trans                    &trans  &trans  &kp LG(RET)  &trans      &trans      &trans
             >;
 
             sensor-bindings = <
