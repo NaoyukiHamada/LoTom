@@ -22,7 +22,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
 
-            tap-ms = <40>;
+            tap-ms = <100>;
         };
     };
 
