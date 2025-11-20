@@ -13,7 +13,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-            tap-ms = <5>;
+            tap-ms = <20>;
         };
 
         tab_slide: behavior_sensor_rotate_tab_slide {
